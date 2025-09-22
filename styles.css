@@ -7,6 +7,10 @@ body {
     background-color: #f4f4f4;
 }
 
+.bat-nav {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,6 +32,31 @@ a:hover {
     transform: translateX(-20px);
     transition: 0.4s;
     color:  #b6cedd;
+}
+
+@media (max-width: 800px) {
+    .bat-nav {
+        font-size: 2em;
+        display: block;
+        border: none;
+        color: #ffffff;
+        background-color: #35424a;
+        cursor: pointer;
+    }
+
+    .Da {
+        display: none;
+    }
+
+    .drop:hover .Da {
+        display: block;
+        margin: 0;
+        position: absolute;
+        background-color: #35424a;
+        padding: 10px; 
+        border: 1px solid #dddddd; 
+        z-index: 100; 
+    }
 }
 
 main {
